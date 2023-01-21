@@ -1,1 +1,26 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Questionnaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="question-form">
+    <h1>Questionnaire</h1>
+    <label for="question1">Question 1: What is your name?</label>
+    <input type="text" id="question1" name="question1">
+
+    <label for="question2">Question 2: What is your age?</label>
+    <input type="text" id="question2" name="question2">
+
+    <!-- Add 8 more questions here -->
+
+    <input type="button" value="Submit" onclick="showAnswers()">
+  </form>
+  <div id="answers"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
