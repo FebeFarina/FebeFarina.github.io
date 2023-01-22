@@ -1,1 +1,42 @@
-[{"question": " 1. \u00bfQu\u00e9 es un Thread?", "answer": "Un Thread, nos permite ejecutar varios fragmentos de c\u00f3digo al mismo tiempo, en vez de una forma secuencial detr\u00e1s del otro como ser\u00eda lo habitual.\n\n"}, {"question": " 2. \u00bfC\u00f3mo se crean los Thread en Ruby?", "answer": "Thread.new {...}\n\n"}, {"question": " 3. \u00bfQu\u00e9 m\u00e9todos proporciona Ruby para la manipulaci\u00f3n de Threads?", "answer": "Los principales m\u00e9todos para la manipulaci\u00f3n de Threads son:\n\u2022 New: crea un nuevo hilo con el bloque recibido.\n\u2022 Kill: finaliza el hilo y cede el turno a otro.\n\u2022 Join: garantiza que un hilo se pueda ejecutar antes de finalizar el resto.\n\u2022 Current: devuelve cual es el hilo actual en ejecuci\u00f3n.\n\u2022 Main: devuelve cual es el hilo principal.\n\u2022 List: lista todos los hilos definidos por el usuasrio.\n\u2022 Pass: cede el turno de ejecuci\u00f3n al siguiente hilo.\n\u2022 Exit: finaliza el hilo y cede el turno a otro.\n\n"}, {"question": " 5. Describa el tipo de acceso que tienen los Threads a los distintos tipos de variables en Ruby.", "answer": "Los hilos pueden acceder a cualquier variable que este bajo su ambiente  a la hora de crear el\npropio hilo.\n\n"}, {"question": " 6. \u00bfC\u00f3mo se tratan las variables locales a los Threads en Ruby?", "answer": "Las variables locales que contiene el bloque recibido por el hilo, son locales al hilo y no pueden\nser compartidas. Sin embargo, los hilos pueden tener variables locales propias, las cuales son\naccesibles mediante nombre usando [].\n\n"}, {"question": " 8. \u00bfQu\u00e9 es una condici\u00f3n de carrera (race condition)?", "answer": "Una condici\u00f3n de carrera se considera a la situaci\u00f3n en la que m\u00faltiples procesos entran en\nconflicto a la hora de acceder a un dato, ya que acceden en el mismo instante de tiempo.\n\n"}, {"question": " 10. \u00bfQu\u00e9 es la exclusi\u00f3n mutua (mutual exclusi\u00f3n)?", "answer": "La exclusi\u00f3n mutua es una t\u00e9cnica que se usa en la programaci\u00f3n concurrente para evitar el\nacceso a secciones cr\u00edticas por m\u00e1s de un proceso a la vez.\n\n"}, {"question": " 11. \u00bfPara qu\u00e9 se utilizan los objetos de la clase Mutex en Ruby?", "answer": "En Ruby, la clase Mutex nos permite sincronizar regiones cr\u00edticas, para que solamente pueda\nentrar un hilo en cada instante de tiempo. El resto de hilos que intentan acceder a esa regi\u00f3n\ncr\u00edtica, se quedan esperando por orden de llegada en una cola.\n\n"}, {"question": " 13. \u00bfQu\u00e9 es un abrazo mortal (deadlock)?", "answer": "Tambi\u00e9n conocido como bloqueo muto, es la situaci\u00f3n dentro de la programaci\u00f3n concurrente en\nla que dos o m\u00e1s hilos que compiten por un recurso o se comunican entre ellos se bloquean\nindefinidamente.\n\n"}, {"question": " 14. \u00bfQu\u00e9 mecanismo proporciona Ruby para evitar los deadlock?", "answer": "Las condition variables, o variables de condici\u00f3n. Permite la comunicaci\u00f3n mediante eventos o\ncondiciones entre dos hilos, de esta forma, un hilo puede esperar por la ejecuci\u00f3n del otro sin\nmiedo a quedar en un bucle infinito al estar dentro de un mutex.\n"}]
+[
+  {
+    "question": " 1. \u00bfQu\u00e9 es un Thread?",
+    "answer": "Un Thread, nos permite ejecutar varios fragmentos de c\u00f3digo al mismo tiempo, en vez de una forma secuencial detr\u00e1s del otro como ser\u00eda lo habitual.\n\n"
+  },
+  {
+    "question": " 2. \u00bfC\u00f3mo se crean los Thread en Ruby?",
+    "answer": "Thread.new {...}\n\n"
+  },
+  {
+    "question": " 3. \u00bfQu\u00e9 m\u00e9todos proporciona Ruby para la manipulaci\u00f3n de Threads?",
+    "answer": "Los principales m\u00e9todos para la manipulaci\u00f3n de Threads son:\n\u2022 New: crea un nuevo hilo con el bloque recibido.\n\u2022 Kill: finaliza el hilo y cede el turno a otro.\n\u2022 Join: garantiza que un hilo se pueda ejecutar antes de finalizar el resto.\n\u2022 Current: devuelve cual es el hilo actual en ejecuci\u00f3n.\n\u2022 Main: devuelve cual es el hilo principal.\n\u2022 List: lista todos los hilos definidos por el usuasrio.\n\u2022 Pass: cede el turno de ejecuci\u00f3n al siguiente hilo.\n\u2022 Exit: finaliza el hilo y cede el turno a otro.\n\n"
+  },
+  {
+    "question": " 5. Describa el tipo de acceso que tienen los Threads a los distintos tipos de variables en Ruby.",
+    "answer": "Los hilos pueden acceder a cualquier variable que este bajo su ambiente  a la hora de crear el\npropio hilo.\n\n"
+  },
+  {
+    "question": " 6. \u00bfC\u00f3mo se tratan las variables locales a los Threads en Ruby?",
+    "answer": "Las variables locales que contiene el bloque recibido por el hilo, son locales al hilo y no pueden\nser compartidas. Sin embargo, los hilos pueden tener variables locales propias, las cuales son\naccesibles mediante nombre usando [].\n\n"
+  },
+  {
+    "question": " 8. \u00bfQu\u00e9 es una condici\u00f3n de carrera (race condition)?",
+    "answer": "Una condici\u00f3n de carrera se considera a la situaci\u00f3n en la que m\u00faltiples procesos entran en\nconflicto a la hora de acceder a un dato, ya que acceden en el mismo instante de tiempo.\n\n"
+  },
+  {
+    "question": " 10. \u00bfQu\u00e9 es la exclusi\u00f3n mutua (mutual exclusi\u00f3n)?",
+    "answer": "La exclusi\u00f3n mutua es una t\u00e9cnica que se usa en la programaci\u00f3n concurrente para evitar el\nacceso a secciones cr\u00edticas por m\u00e1s de un proceso a la vez.\n\n"
+  },
+  {
+    "question": " 11. \u00bfPara qu\u00e9 se utilizan los objetos de la clase Mutex en Ruby?",
+    "answer": "En Ruby, la clase Mutex nos permite sincronizar regiones cr\u00edticas, para que solamente pueda\nentrar un hilo en cada instante de tiempo. El resto de hilos que intentan acceder a esa regi\u00f3n\ncr\u00edtica, se quedan esperando por orden de llegada en una cola.\n\n"
+  },
+  {
+    "question": " 13. \u00bfQu\u00e9 es un abrazo mortal (deadlock)?",
+    "answer": "Tambi\u00e9n conocido como bloqueo muto, es la situaci\u00f3n dentro de la programaci\u00f3n concurrente en\nla que dos o m\u00e1s hilos que compiten por un recurso o se comunican entre ellos se bloquean\nindefinidamente.\n\n"
+  },
+  {
+    "question": " 14. \u00bfQu\u00e9 mecanismo proporciona Ruby para evitar los deadlock?",
+    "answer": "Las condition variables, o variables de condici\u00f3n. Permite la comunicaci\u00f3n mediante eventos o\ncondiciones entre dos hilos, de esta forma, un hilo puede esperar por la ejecuci\u00f3n del otro sin\nmiedo a quedar en un bucle infinito al estar dentro de un mutex.\n"
+  }
+]

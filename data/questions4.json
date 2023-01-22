@@ -1,1 +1,70 @@
-[{"question": " \u00bfQu\u00e9 es un bloque en Ruby?", "answer": "Un bloque es una funci\u00f3n an\u00f3nima que se pasan como argumentos a otras funciones.\nVisualmente corresponden a un fragmento de c\u00f3digo delimitado por llaves {\u2026} o do...end que\nincluye una agrupaci\u00f3n de sentencia\n"}, {"question": " \u00bfQu\u00e9 es un Proc?", "answer": "Un Proc es una clase que nos permite definir un bloque que recibe como par\u00e1metro como un\nobjeto.\n"}, {"question": " \u00bfQu\u00e9 es un lambda?", "answer": "Un lambda no es m\u00e1s que otra forma de poder instanciar bloques, la cual es de clase Proc\ntambi\u00e9n. La diferencia entre Proc, es que es m\u00e1s restrictivo, a un lambda se le tiene que pasar\nexactamente el mismo n\u00famero de argumentos, mientras que a un Proc no.\n"}, {"question": " \u00bfC\u00f3mo se define una closure?", "answer": "Una clausura se refiera a un objeto que es a la vez invocable como una funci\u00f3n y que dispone un entorno de ejecuci\u00f3n para esa funci\u00f3n.\n"}, {"question": " \u00bfQu\u00e9 se entiende por efectos laterales?", "answer": "Se considera as\u00ed a cualquier cambio que una funci\u00f3n produce fuera de su \u00e1mbito, como por\nejemplo, una funci\u00f3n que modifique el valor original de una variable que ha recibido como\npar\u00e1metro, o que modifique variables globales o cualquier otra cosa que no sean variables\nlocales a la funci\u00f3n.\n\n"}, {"question": " \u00bfQu\u00e9 son las funciones de orden superior (high order functions)?", "answer": "Son aquellas funciones que reciben una funci\u00f3n como argumento y devuelve una funci\u00f3n.\nAdem\u00e1s no tienen ning\u00fan efecto lateral.\n\n"}, {"question": " \u00bfQu\u00e9 es la memorizaci\u00f3n (memorization)?", "answer": "Es una t\u00e9cnica usada para acelerar la velocidad de c\u00f3mputo de funciones puras que,bajo la misma\nlista de argumentos, retornan siempre el mismo valor, cache\u00e1ndolo, y retornando \u00e9ste sin\nnecesidad de volver a computar la funci\u00f3n.\n"}, {"question": " \u00bfQu\u00e9 es la reflexi\u00f3n o instrospecci\u00f3n?", "answer": "Es la capacidad de un lenguaje de programaci\u00f3n de ser su propio metalenguaje.\n\n"}, {"question": " \u00bfQu\u00e9 es un contexto (binding)?", "answer": "Es un objeto que guarda toda la informaci\u00f3n del entorno donde se crea.\n\n"}, {"question": " \u00bfQu\u00e9 se entiende por metaprogramaci\u00f3n?", "answer": "Consiste en escribir programas y frameworks que nos ayudan a escribir programas.\n\n"}, {"question": " \u00bfQu\u00e9 es un Lenguaje de Dominio espec\u00edfico (DSL - Domain Specific Language)?", "answer": "Es un lenguaje de programaci\u00f3n o especificaci\u00f3n de un lenguaje dedicado a resolver un problema\nen particular, representar un problema espec\u00edfico y proveer una t\u00e9cnica para solucionar una\nsituaci\u00f3n particular.\n\n"}, {"question": " \u00bfQu\u00e9 diferencias hay entre instance eval, class eval y eval?", "answer": "- instance_eval: Define m\u00e9todos Singleton del objeto.\n- class_eval: Define m\u00e9todos de instancia.\n- eval: Eval\u00faa el c\u00f3digo contenido en un String.\n\n"}, {"question": " \u00bfCu\u00e1l es el peligro de usar eval en un entorno distribuido?", "answer": "Que los datos pueden venir de fuentes externas y no ser seguros. Ya que eval no analiza el\nc\u00f3digo y se puede introducir c\u00f3digo malicioso.\n\n"}, {"question": " Cuando se define un m\u00e9todo dentro de un bloque o cadena llamado con class_eval \u00bfqu\u00e9 clase de m\u00e9todo se est\u00e1 creando?", "answer": "Un m\u00e9todo de instancia.\n\n"}, {"question": " Cuando se define un m\u00e9todo dentro de un bloque o cadena llamado con instance_eval \u00bfqu\u00e9 clase de m\u00e9todo se est\u00e1 creando?", "answer": "Un m\u00e9todo singleton.\n\n"}, {"question": " \u00bfC\u00f3mo se puede incorporar un m\u00e9todo definido en una cadena *x = \u2019def met; \"a method\"; end* como m\u00e9todo de clase, en una cierta clase A?", "answer": "A.instance_eval {x}\n\n"}, {"question": " Sea M un m\u00f3dulo y C una clase. \u00bfQu\u00e9 ocurre si se ejecuta C.extend(M)? \u00bfD\u00f3nde acaban los m\u00e9todos de instancia de M?", "answer": "Acaban como m\u00e9todos de clase de la clase C"}]
+[
+  {
+    "question": " \u00bfQu\u00e9 es un bloque en Ruby?",
+    "answer": "Un bloque es una funci\u00f3n an\u00f3nima que se pasan como argumentos a otras funciones.\nVisualmente corresponden a un fragmento de c\u00f3digo delimitado por llaves {\u2026} o do...end que\nincluye una agrupaci\u00f3n de sentencia\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 es un Proc?",
+    "answer": "Un Proc es una clase que nos permite definir un bloque que recibe como par\u00e1metro como un\nobjeto.\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 es un lambda?",
+    "answer": "Un lambda no es m\u00e1s que otra forma de poder instanciar bloques, la cual es de clase Proc\ntambi\u00e9n. La diferencia entre Proc, es que es m\u00e1s restrictivo, a un lambda se le tiene que pasar\nexactamente el mismo n\u00famero de argumentos, mientras que a un Proc no.\n"
+  },
+  {
+    "question": " \u00bfC\u00f3mo se define una closure?",
+    "answer": "Una clausura se refiera a un objeto que es a la vez invocable como una funci\u00f3n y que dispone un entorno de ejecuci\u00f3n para esa funci\u00f3n.\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 se entiende por efectos laterales?",
+    "answer": "Se considera as\u00ed a cualquier cambio que una funci\u00f3n produce fuera de su \u00e1mbito, como por\nejemplo, una funci\u00f3n que modifique el valor original de una variable que ha recibido como\npar\u00e1metro, o que modifique variables globales o cualquier otra cosa que no sean variables\nlocales a la funci\u00f3n.\n\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 son las funciones de orden superior (high order functions)?",
+    "answer": "Son aquellas funciones que reciben una funci\u00f3n como argumento y devuelve una funci\u00f3n.\nAdem\u00e1s no tienen ning\u00fan efecto lateral.\n\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 es la memorizaci\u00f3n (memorization)?",
+    "answer": "Es una t\u00e9cnica usada para acelerar la velocidad de c\u00f3mputo de funciones puras que,bajo la misma\nlista de argumentos, retornan siempre el mismo valor, cache\u00e1ndolo, y retornando \u00e9ste sin\nnecesidad de volver a computar la funci\u00f3n.\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 es la reflexi\u00f3n o instrospecci\u00f3n?",
+    "answer": "Es la capacidad de un lenguaje de programaci\u00f3n de ser su propio metalenguaje.\n\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 es un contexto (binding)?",
+    "answer": "Es un objeto que guarda toda la informaci\u00f3n del entorno donde se crea.\n\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 se entiende por metaprogramaci\u00f3n?",
+    "answer": "Consiste en escribir programas y frameworks que nos ayudan a escribir programas.\n\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 es un Lenguaje de Dominio espec\u00edfico (DSL - Domain Specific Language)?",
+    "answer": "Es un lenguaje de programaci\u00f3n o especificaci\u00f3n de un lenguaje dedicado a resolver un problema\nen particular, representar un problema espec\u00edfico y proveer una t\u00e9cnica para solucionar una\nsituaci\u00f3n particular.\n\n"
+  },
+  {
+    "question": " \u00bfQu\u00e9 diferencias hay entre instance eval, class eval y eval?",
+    "answer": "- instance_eval: Define m\u00e9todos Singleton del objeto.\n- class_eval: Define m\u00e9todos de instancia.\n- eval: Eval\u00faa el c\u00f3digo contenido en un String.\n\n"
+  },
+  {
+    "question": " \u00bfCu\u00e1l es el peligro de usar eval en un entorno distribuido?",
+    "answer": "Que los datos pueden venir de fuentes externas y no ser seguros. Ya que eval no analiza el\nc\u00f3digo y se puede introducir c\u00f3digo malicioso.\n\n"
+  },
+  {
+    "question": " Cuando se define un m\u00e9todo dentro de un bloque o cadena llamado con class_eval \u00bfqu\u00e9 clase de m\u00e9todo se est\u00e1 creando?",
+    "answer": "Un m\u00e9todo de instancia.\n\n"
+  },
+  {
+    "question": " Cuando se define un m\u00e9todo dentro de un bloque o cadena llamado con instance_eval \u00bfqu\u00e9 clase de m\u00e9todo se est\u00e1 creando?",
+    "answer": "Un m\u00e9todo singleton.\n\n"
+  },
+  {
+    "question": " \u00bfC\u00f3mo se puede incorporar un m\u00e9todo definido en una cadena *x = \u2019def met; \"a method\"; end* como m\u00e9todo de clase, en una cierta clase A?",
+    "answer": "A.instance_eval {x}\n\n"
+  },
+  {
+    "question": " Sea M un m\u00f3dulo y C una clase. \u00bfQu\u00e9 ocurre si se ejecuta C.extend(M)? \u00bfD\u00f3nde acaban los m\u00e9todos de instancia de M?",
+    "answer": "Acaban como m\u00e9todos de clase de la clase C"
+  }
+]
