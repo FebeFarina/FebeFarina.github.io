@@ -1,5 +1,5 @@
 // JavaScript for the Quiz page
-
+var selectedQuestions = []
 // Get questions from JSON files
 var allQuestions = []
 Promise.all([
@@ -16,7 +16,7 @@ Promise.all([
     // Shuffle the questions
     shuffle(allQuestions);
     // Get 2 random questions from each file
-    var selectedQuestions = allQuestions.slice(0, 10);
+    selectedQuestions = allQuestions.slice(0, 10);
     // Generate HTML for the questions
     var quizHTML = "";
     for (var i = 0; i < selectedQuestions.length; i++) {
