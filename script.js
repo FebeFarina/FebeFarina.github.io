@@ -3,11 +3,11 @@
 // Get questions from JSON files
 var allQuestions = []
 Promise.all([
-  fetch('questions1.json'),
-  fetch('questions2.json'),
-  fetch('questions3.json'),
-  fetch('questions4.json'),
-  fetch('questions5.json')
+  fetch('data/questions1.json'),
+  fetch('data/questions2.json'),
+  fetch('data/questions3.json'),
+  fetch('data/questions4.json'),
+  fetch('data/questions5.json')
 ])
   .then(responses => Promise.all(responses.map(res => res.json())))
   .then(questionArrays => {
