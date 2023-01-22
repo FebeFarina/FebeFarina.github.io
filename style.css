@@ -1,6 +1,15 @@
 /* CSS for the Quiz page */
+body {
+  background-color: #604D53;
+  /* dark gray background color */
+  color: #D5C5C8;
+  /* light gray text color */
+}
+
 h1 {
   text-align: center;
+  color: #DB7F8E;
+  /* purple text color */
 }
 
 #questions {
@@ -11,13 +20,38 @@ h1 {
   text-align: center;
   font-weight: bold;
   display: none;
+  color: #9DA3A4;
+  /* purple text color */
 }
 
 input[type='text'] {
+  background-color: #FFDBDA;
+  /* dark purple background color */
+  color: #604D53;
+  /* light gray text color */
+  border: none;
+  /* remove border */
+  padding: 10px;
+  /* add padding */
   width: 100%;
-  /*make the input element full width*/
+  /* make the input element full width */
   height: 50px;
-  /*make the input element taller*/
+  /* make the input element taller */
   font-size: 1.2em;
-  /*increase the font size*/
+  /* increase the font size */
+}
+
+input[type='submit'] {
+  background-color: #DB7F8E;
+  /* purple background color */
+  color: #FFDBDA;
+  /* light gray text color */
+  border: none;
+  /* remove border */
+  padding: 10px 20px;
+  /* add padding */
+  margin-top: 20px;
+  /* add margin */
+  font-size: 1.2em;
+  /* increase the font size */
 }
