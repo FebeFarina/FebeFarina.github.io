@@ -82,15 +82,6 @@ respecto a lenguajes de alto nivel.
 ### ¿Qué hace un lenguaje de programación tenga éxito?
 
 Tiene que tener muchos usuarios que lo usen y la curva de aprendizaje tiene que ser pequeña.
-
-### Nombre dos lenguajes de cada una de las siguientes categorías:
-
-- von Neumann: C, Fortran
-- orientado a objetos: Ruby, C++
-- concurrente: Ada, Erlang
-- funcional: Lisp, FP
-- lógico: Prolog, Datalog
-
 ### ¿Qué distingue a los lenguajes declarativos de los lenguajes imperativos?
 
 En los lenguajes declarativos se especifica lo que se quiere obtener como resultado deseado y en los lenguajes de programación imperativos se define la secuencia de operaciones a realizar para obtener el resultado.

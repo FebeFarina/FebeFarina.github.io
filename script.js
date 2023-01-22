@@ -3,11 +3,11 @@ var selectedQuestions = []
 // Get questions from JSON files
 var allQuestions = []
 Promise.all([
-  fetch('questions1.json'),
-  fetch('questions2.json'),
-  fetch('questions3.json'),
-  fetch('questions4.json'),
-  fetch('questions5.json')
+  fetch('data/questions1.json'),
+  fetch('data/questions2.json'),
+  fetch('data/questions3.json'),
+  fetch('data/questions4.json'),
+  fetch('data/questions5.json')
 ])
   .then(responses => Promise.all(responses.map(res => res.json())))
   .then(questionArrays => {
@@ -41,4 +41,17 @@ function showAnswers() {
   }
   document.getElementById("result").innerHTML = resultHTML;
   document.getElementById("result").style.display = "block";
+}
+
+// Shuffle function
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
 }
