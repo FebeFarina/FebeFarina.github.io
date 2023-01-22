@@ -261,14 +261,14 @@
   },
   {
     "question": " 102. \u00bfQu\u00e9 es un conjunto de pruebas (Test case)?",
-    "answer": ""
+    "answer": "Una serie de condiciones que el programa debe cumplir para considerarse exitoso o funcional."
   },
   {
     "question": " 103. \u00bfQu\u00e9 es una afirmaci\u00f3n (assertion)?",
-    "answer": ""
+    "answer": "Es sentencia que comprobará el código que se ejecute dentro de ella y nos dará un error en caso de que no se de el funcionamiento esperado."
   },
   {
     "question": " \u00bfEn qu\u00e9 consiste la comprobaci\u00f3n continua (Continous Testing)?",
-    "answer": ""
+    "answer": "Consiste en que a cada funcionalidad que implementemos le realicemos una prueba funcionamiento."
   }
 ]
