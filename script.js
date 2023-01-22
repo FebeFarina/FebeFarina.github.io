@@ -3,11 +3,11 @@
 // Get questions from JSON files
 var allQuestions = []
 Promise.all([
-  fetch('data/questions1.json'),
-  fetch('data/questions2.json'),
-  fetch('data/questions3.json'),
-  fetch('data/questions4.json'),
-  fetch('data/questions5.json')
+  fetch('questions1.json'),
+  fetch('questions2.json'),
+  fetch('questions3.json'),
+  fetch('questions4.json'),
+  fetch('questions5.json')
 ])
   .then(responses => Promise.all(responses.map(res => res.json())))
   .then(questionArrays => {
@@ -31,19 +31,14 @@ Promise.all([
       showAnswers();
     });
   });
+
 // Function to show the answers
 function showAnswers() {
   var resultHTML = "";
   for (var i = 0; i < selectedQuestions.length; i++) {
-    var userAnswer = document.getElementById("answer" + i).value;
     var correctAnswer = selectedQuestions[i].answer;
-    if (userAnswer === correctAnswer) {
-      resultHTML += "<p>Question " + (i + 1) + ": Correct</p>";
-    } else {
-      resultHTML += "<p>Question " + (i + 1) + ": Incorrect, the correct answer is: " + correctAnswer + "</p>";
-    }
+    resultHTML += "<p>Question " + (i + 1) + ": " + correctAnswer + "</p>";
   }
   document.getElementById("result").innerHTML = resultHTML;
   document.getElementById("result").style.display = "block";
 }
-
