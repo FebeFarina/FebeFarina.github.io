@@ -12,3 +12,12 @@ h1 {
   font-weight: bold;
   display: none;
 }
+
+input[type='text'] {
+  width: 100%;
+  /*make the input element full width*/
+  height: 50px;
+  /*make the input element taller*/
+  font-size: 1.2em;
+  /*increase the font size*/
+}

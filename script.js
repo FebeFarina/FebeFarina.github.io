@@ -19,33 +19,25 @@ fetch('questions.json')
 
     // Add the questions to the page
     document.getElementById("questions").innerHTML = quizHTML;
-
-    // Function to show the answers
-    function showAnswers() {
-      var resultHTML = "";
-      for (var i = 0; i < selectedQuestions.length; i++) {
-        var userAnswer = document.getElementById("answer" + i).value;
-        var correctAnswer = selectedQuestions[i].answer;
-        if (userAnswer === correctAnswer) {
-          resultHTML += "<p>Question " + (i + 1) + ": Correct</p>";
-        } else {
-          resultHTML += "<p>Question " + (i + 1) + ": Incorrect, the correct answer is: " + correctAnswer + "</p>";
-        }
-      }
-      document.getElementById("result").innerHTML = resultHTML;
-      document.getElementById("result").style.display = "block";
-    }
+    // Add event listener to submit button
+    document.getElementById("quiz-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      showAnswers();
+    });
   })
-
-// Shuffle function
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+// Function to show the answers
+function showAnswers() {
+  var resultHTML = "";
+  for (var i = 0; i < selectedQuestions.length; i++) {
+    var userAnswer = document.getElementById("answer" + i).value;
+    var correctAnswer = selectedQuestions[i].answer;
+    if (userAnswer === correctAnswer) {
+      resultHTML += "<p>Question " + (i + 1) + ": Correct</p>";
+    } else {
+      resultHTML += "<p>Question " + (i + 1) + ": Incorrect, the correct answer is: " + correctAnswer + "</p>";
+    }
   }
-  return array;
+  document.getElementById("result").innerHTML = resultHTML;
+  document.getElementById("result").style.display = "block";
 }
+
