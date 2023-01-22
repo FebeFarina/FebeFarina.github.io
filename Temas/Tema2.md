@@ -35,12 +35,6 @@ momento desde este o desde otro procedimiento.
 
 Valores a devolver, zona de control, parámetros, variables locales y temporales.
 
-### ¿Dibuje el flujo de ejecución de un programa principal en el que se hace una llamada a un subprograma para sumar dos números?
-
-![Sinceramente no se como dibujar esto, pero yo lo visualizo así](Tema%202%2062921a49bc384e188e4ec12384c6822a/Sin_ttulo.png)
-
-Sinceramente no se como dibujar esto, pero yo lo visualizo así
-
 ### ¿Qué se entiende por programación procedural?
 
 > Se basa en estructurar el código en procedimientos.
@@ -135,11 +129,10 @@ $: Variable global
 
 Estructura de datos en la que se almacenan variables de forma consecutiva. Para definir un array se puede hacer de la siguiente manera:
 
-```ruby
 a = Array.new
 b = []
 c = %w{elemento1 elemento2}
-```
+
 
 ### ¿Qué es un hash? ¿Cuál es la sintaxis para definirlos en Ruby?
 
@@ -149,10 +142,8 @@ c = %w{elemento1 elemento2}
 > Un hash es una colección de objetos ordenada, que a diferencia de los arrays que se ordenan mediante un índice, estos utilizan pares identificables por una clave y un valor. Para definir un hash se puede hacer de la siguiente manera:
 > 
 
-```ruby
 a = Hash.new
 b = {}
-```
 
 ### ¿Qué es nil en Ruby?
 
@@ -171,62 +162,6 @@ Un símbolo no es más que un objeto que cuenta con un nombre y una ID interna. 
 ### ¿Es correcto escribir subguiones en un número (por ejemplo: 1_000_000)?
 
 Sí
-
-### ¿Cuál es la sintaxis para definir sentencias condicionales en Ruby?
-
-```ruby
-if conditional [then]
- code...
-[elsif conditional [then]
- code...]...
-[else
- code...]
-end
-```
-
-```ruby
-unless conditional [then]
- code
-[else
- code ]
-end
-```
-
-```ruby
-case expression
- [when expression [then]
- code
-[else
-code ]
-end
-```
-
-### ¿Cuál es la sintaxis para definir sentencias iterativas en Ruby?
-
-```ruby
-for variable in expression [do]
- code
-end
-```
-
-```ruby
-loop do
- code
-end
-```
-
-```ruby
-while conditional [do]
- code
-end
-```
-
-```ruby
-until conditional [do]
- code
-end
-```
-
 ### ¿Cuál es la sintaxis para definir expresiones regulares en Ruby?
 
 Las expresiones regulares están contenidas en '/ expresión /'. Ejemplo: /a+/.

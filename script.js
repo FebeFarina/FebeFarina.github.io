@@ -1,22 +1,28 @@
 // JavaScript for the Quiz page
 
-// Get questions from JSON file
-fetch('questions.json')
-  .then(response => response.json())
-  .then(questions => {
+// Get questions from JSON files
+var allQuestions = []
+Promise.all([
+  fetch('questions1.json'),
+  fetch('questions2.json'),
+  fetch('questions3.json'),
+  fetch('questions4.json'),
+  fetch('questions5.json')
+])
+  .then(responses => Promise.all(responses.map(res => res.json())))
+  .then(questionArrays => {
+    // flatten the arrays
+    allQuestions = questionArrays.flat();
     // Shuffle the questions
-    shuffle(questions);
-
-    // Get 10 random questions
-    var selectedQuestions = questions.slice(0, 10);
-
+    shuffle(allQuestions);
+    // Get 2 random questions from each file
+    var selectedQuestions = allQuestions.slice(0, 10);
     // Generate HTML for the questions
     var quizHTML = "";
     for (var i = 0; i < selectedQuestions.length; i++) {
       quizHTML += "<p>" + selectedQuestions[i].question + "</p>";
       quizHTML += "<input type='text' id='answer" + i + "'>";
     }
-
     // Add the questions to the page
     document.getElementById("questions").innerHTML = quizHTML;
     // Add event listener to submit button
@@ -24,7 +30,7 @@ fetch('questions.json')
       e.preventDefault();
       showAnswers();
     });
-  })
+  });
 // Function to show the answers
 function showAnswers() {
   var resultHTML = "";

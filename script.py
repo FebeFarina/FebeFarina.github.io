@@ -21,5 +21,17 @@ def markdown_to_json(markdown_file):
     return json_object
 
 json_object = markdown_to_json('Temas/Tema1.md')
-with open("questions.json", "w") as json_file:
+with open("questions1.json", "w") as json_file:
     json_file.write(json_object)
+json_object = markdown_to_json('Temas/Tema2.md')
+with open("questions2.json", "w") as json_file:
+    json_file.write(json_object)   
+json_object = markdown_to_json('Temas/Tema3.md')
+with open("questions3.json", "w") as json_file:
+    json_file.write(json_object) 
+json_object = markdown_to_json('Temas/Tema4.md')
+with open("questions4.json", "w") as json_file:
+    json_file.write(json_object)
+json_object = markdown_to_json('Temas/Tema5.md')
+with open("questions5.json", "w") as json_file:
+    json_file.write(json_object)    
