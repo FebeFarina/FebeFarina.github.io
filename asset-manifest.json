@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FebeFarina/FebeFarina.github.io/static/css/main.6c08f398.css",
-    "main.js": "/FebeFarina/FebeFarina.github.io/static/js/main.0241a3f4.js",
+    "main.css": "/FebeFarina/FebeFarina.github.io/static/css/main.f1247a44.css",
+    "main.js": "/FebeFarina/FebeFarina.github.io/static/js/main.b7df5e76.js",
     "static/js/787.d47c32c6.chunk.js": "/FebeFarina/FebeFarina.github.io/static/js/787.d47c32c6.chunk.js",
     "static/media/60c Apadana embajada.jpg": "/FebeFarina/FebeFarina.github.io/static/media/60c Apadana embajada.686083baa7dbeb3c8072.jpg",
     "static/media/26 Ebih-il 2500.jpg": "/FebeFarina/FebeFarina.github.io/static/media/26 Ebih-il 2500.fabe292abab8327706b8.jpg",
@@ -234,12 +234,12 @@
     "static/media/08. Sepulcro de Toya 2.jpeg": "/FebeFarina/FebeFarina.github.io/static/media/08. Sepulcro de Toya 2.82a9f08dbceac5c53acb.jpeg",
     "static/media/17 Coraza de Alcudia.jpg": "/FebeFarina/FebeFarina.github.io/static/media/17 Coraza de Alcudia.6940e714553b26408a3b.jpg",
     "index.html": "/FebeFarina/FebeFarina.github.io/index.html",
-    "main.6c08f398.css.map": "/FebeFarina/FebeFarina.github.io/static/css/main.6c08f398.css.map",
-    "main.0241a3f4.js.map": "/FebeFarina/FebeFarina.github.io/static/js/main.0241a3f4.js.map",
+    "main.f1247a44.css.map": "/FebeFarina/FebeFarina.github.io/static/css/main.f1247a44.css.map",
+    "main.b7df5e76.js.map": "/FebeFarina/FebeFarina.github.io/static/js/main.b7df5e76.js.map",
     "787.d47c32c6.chunk.js.map": "/FebeFarina/FebeFarina.github.io/static/js/787.d47c32c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c08f398.css",
-    "static/js/main.0241a3f4.js"
+    "static/css/main.f1247a44.css",
+    "static/js/main.b7df5e76.js"
   ]
 }
